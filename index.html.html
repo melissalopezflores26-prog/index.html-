@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Configuración</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-title" content="Config. Demo">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style>
+:root{--bg:#f2f2f7;--card:#fff;--sep:rgba(60,60,67,.18);--lb:#000;--sec:rgba(60,60,67,.6);--ter:rgba(60,60,67,.3);--acc:#007aff;--bar:rgba(242,242,247,.8);--track:#e5e5ea;--press:#d1d1d6;--top:env(safe-area-inset-top,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#000;--card:#1c1c1e;--sep:rgba(84,84,88,.6);--lb:#fff;--sec:rgba(235,235,245,.6);--ter:rgba(235,235,245,.3);--acc:#0a84ff;--bar:rgba(0,0,0,.7);--track:#2c2c2e;--press:#2c2c2e}}
+:root[data-theme="dark"]{--bg:#000;--card:#1c1c1e;--sep:rgba(84,84,88,.6);--lb:#fff;--sec:rgba(235,235,245,.6);--ter:rgba(235,235,245,.3);--acc:#0a84ff;--bar:rgba(0,0,0,.7);--track:#2c2c2e;--press:#2c2c2e}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--lb);font:17px/1.25 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased;overscroll-behavior:none}
+#app{position:relative;width:100%;height:100%;overflow:hidden;background:var(--bg)}
+@media (min-width:500px){html,body{background:#c7c7cc;display:flex;align-items:center;justify-content:center}
+#app{width:390px;height:844px;max-height:96vh;border-radius:48px;border:10px solid #1b1b1d;--top:54px}
+#app::after{content:"";position:absolute;top:11px;left:50%;width:110px;height:32px;margin-left:-55px;border-radius:20px;background:#000;z-index:50}}
+.page{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;background:var(--bg);transition:transform .35s cubic-bezier(.2,.8,.2,1);-webkit-overflow-scrolling:touch;box-shadow:-6px 0 24px rgba(0,0,0,.12)}
+.page.in{transform:translateX(100%)}.page.under{transform:translateX(-28%)}
+.nav{position:sticky;top:0;z-index:5;height:calc(44px + var(--top));padding-top:var(--top);display:flex;align-items:center;justify-content:space-between;padding-left:8px;padding-right:16px}
+.nav::before{content:"";position:absolute;inset:0;background:var(--bar);-webkit-backdrop-filter:blur(24px) saturate(180%);backdrop-filter:blur(24px) saturate(180%);border-bottom:.5px solid var(--sep);opacity:0;transition:opacity .2s}
+.sc .nav::before{opacity:1}
+.nav>*{position:relative}
+.back{display:flex;align-items:center;gap:2px;border:0;background:none;color:var(--acc);font:inherit;padding:8px 6px;cursor:pointer;max-width:42%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.t{position:absolute!important;left:50%;transform:translateX(-50%);font-weight:600;opacity:0;transition:opacity .2s;max-width:50%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sc .t{opacity:1}
+h1{font-size:34px;line-height:41px;font-weight:700;letter-spacing:.37px;margin:0 20px 10px}
+.body{padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+.card{margin:0 16px 35px;background:var(--card);border-radius:20px;overflow:hidden}
+.foot{margin:-26px 32px 30px;font-size:13px;line-height:18px;color:var(--sec)}
+.row{display:flex;align-items:center;padding-left:16px;cursor:pointer;user-select:none;-webkit-user-select:none}
+.row:active{background:var(--press)}
+.in{flex:1;display:flex;align-items:center;min-height:44px;padding:0 16px 0 0;border-top:.5px solid var(--sep);min-width:0}
+.row:first-child .in{border-top:0}
+.ic{width:30px;height:30px;border-radius:8px;margin-right:14px;display:flex;align-items:center;justify-content:center;flex:none}
+.ic svg{width:19px;height:19px;fill:none;stroke:#fff;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.ic svg .f{fill:#fff;stroke:none}
+.lb{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vl{color:var(--sec);margin-left:10px;max-width:58%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.chev{margin-left:8px;width:8px;height:13px;flex:none}
+.chev path{fill:none;stroke:var(--ter);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+.blue{color:var(--acc)}.mid{justify-content:center;text-align:center}
+.search{margin:0 16px 20px;display:flex;align-items:center;gap:6px;background:rgba(118,118,128,.12);border-radius:12px;height:38px;padding:0 10px;color:var(--sec)}
+.search input{flex:1;border:0;background:none;font:inherit;color:var(--lb);outline:0;min-width:0}
+.search svg{width:16px;height:16px;fill:none;stroke:var(--sec);stroke-width:2.2;stroke-linecap:round}
+.sw{position:relative;width:51px;height:31px;flex:none}
+.sw input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer;z-index:2}
+.sw span{position:absolute;inset:0;border-radius:16px;background:rgba(120,120,128,.32);transition:background .25s}
+.sw span::after{content:"";position:absolute;top:2px;left:2px;width:27px;height:27px;border-radius:50%;background:#fff;box-shadow:0 2px 5px rgba(0,0,0,.25);transition:transform .25s}
+.sw input:checked+span{background:#34c759}.sw input:checked+span::after{transform:translateX(20px)}
+.acct{padding:12px 16px;display:flex;align-items:center;gap:14px}
+.av{width:60px;height:60px;border-radius:50%;background:linear-gradient(#a2a2a8,#7c7c82);color:#fff;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
+.acct b{display:block;font-size:20px;font-weight:500}.acct small{font-size:13px;color:var(--sec)}
+.edit{padding:0 16px;display:flex;align-items:center;min-height:44px}
+.edit input{width:100%;border:0;background:none;font:inherit;color:var(--lb);outline:0;padding:11px 0}
+.chk{width:16px;height:16px;fill:none;stroke:var(--acc);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.sh{padding:16px}.sh .top{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin-bottom:12px}
+.sh .top b{font-weight:600}.sh .top span{font-size:13px;color:var(--sec)}
+.bar{display:flex;height:16px;border-radius:8px;overflow:hidden;background:var(--track);gap:1px}
+.bar i{display:block;height:100%}
+.dot{width:12px;height:12px;border-radius:50%;margin-right:14px;flex:none}
+.gen{padding:26px 24px;text-align:center;color:var(--sec);font-size:15px;line-height:21px}
+.st{cursor:default}.st:active{background:transparent}
+.inl .nav{padding-left:16px}.inl .t{opacity:1;max-width:58%}.inl h1{display:none}.inl .body{padding-top:12px}
+.inl .back{width:44px;height:44px;padding:0;justify-content:center;border-radius:50%;background:var(--card);color:var(--lb);border:.5px solid var(--sep);box-shadow:0 2px 10px rgba(0,0,0,.12)}
+.inl .back span{display:none}.inl .back svg{width:11px;height:18px}
+.hdr{margin:-24px 32px 8px;font-size:15px;font-weight:600;color:var(--sec)}.body>.hdr:first-child{margin-top:4px}
+.in.col{flex-direction:column;align-items:stretch;justify-content:center;padding:10px 16px 10px 0}.sub{color:var(--sec);font-size:15px;margin-top:3px;word-break:break-all}
+.rng{width:100%;margin:8px 0 2px;accent-color:var(--acc)}
+.seg{display:flex;background:rgba(118,118,128,.12);border-radius:10px;padding:2px;margin:0 16px 16px}.seg div{flex:1;text-align:center;padding:7px 0;font-size:13px;font-weight:500;border-radius:8px;cursor:pointer}.seg .on{background:var(--card);box-shadow:0 1px 4px rgba(0,0,0,.15);font-weight:600}
+.ch{padding:14px 16px}.ch h4{margin:0 0 6px;font-size:13px;color:var(--sec);font-weight:600}.ch b{display:block;font-size:30px;font-weight:700;margin-bottom:4px}.ch small{display:block;margin-bottom:10px;font-size:13px;color:var(--sec)}
+.axis{display:flex;justify-content:space-between;font-size:11px;color:var(--sec);margin-top:5px}
+.bt{width:64px;height:30px;border:2px solid var(--ter);border-radius:9px;padding:2px}.bt i{display:block;height:100%;border-radius:5px}
+.ubar{height:6px;border-radius:3px;background:var(--track);margin-top:7px;overflow:hidden}.ubar i{display:block;height:100%;background:#34c759}
+.off{position:absolute;inset:0;background:#000;z-index:40;color:#8e8e93;display:flex;align-items:center;justify-content:center;text-align:center;cursor:pointer}.off small{display:block;margin-top:8px;font-size:13px}
+.demo{margin:0 24px;text-align:center;font-size:12px;color:var(--sec)}
+:root{--glass:rgba(255,255,255,.72)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--glass:rgba(58,58,60,.7)}}
+:root[data-theme="dark"]{--glass:rgba(58,58,60,.7)}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display",system-ui,sans-serif;touch-action:manipulation;-webkit-touch-callout:none}
+.row,.nav,h1,.hdr,.foot,.seg{-webkit-user-select:none;user-select:none}
+input{-webkit-user-select:text;user-select:text}
+.page{overscroll-behavior-y:contain}
+.card{margin:0 18px 35px;border-radius:22px}
+.row{padding-left:18px}
+.in{border-top:0;position:relative;min-height:45px;padding-right:18px}
+.in::before{content:"";position:absolute;top:0;left:0;right:18px;border-top:.5px solid var(--sep)}
+.row:first-child .in::before{display:none}
+.in.col{padding-right:18px}
+.lb,.vl{letter-spacing:-.41px}
+.vl{color:var(--sec)}
+.chev{width:7px;height:12px;margin-left:10px}.chev path{stroke:var(--ter);stroke-width:2}
+.ic{position:relative;width:30px;height:30px;border-radius:8px;margin-right:14px;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.1)}
+.ic::after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,rgba(255,255,255,.22),rgba(255,255,255,0) 62%);pointer-events:none}
+.ic svg{position:relative;z-index:1}
+h1{margin:0 24px 12px;letter-spacing:.4px}
+.t{font-size:17px;font-weight:600;letter-spacing:-.41px}
+.hdr{margin:-24px 36px 8px;letter-spacing:-.2px}.body>.hdr:first-child{margin-top:4px}
+.foot{margin:-26px 36px 32px;font-size:13px;line-height:18px;letter-spacing:-.08px}
+.inl .back{background:var(--glass);-webkit-backdrop-filter:blur(22px) saturate(180%);backdrop-filter:blur(22px) saturate(180%);border:0;box-shadow:0 1px 1px rgba(0,0,0,.05),0 6px 18px rgba(0,0,0,.1),inset 0 0 0 .5px rgba(255,255,255,.55);transition:transform .15s}
+.inl .back:active{transform:scale(.92)}
+.inl .nav{padding-left:18px}
+.search{margin:0 18px 22px;height:38px;border-radius:19px;padding:0 12px;letter-spacing:-.41px}
+.acct{padding:14px 18px}.av{width:62px;height:62px;box-shadow:inset 0 0 0 .5px rgba(0,0,0,.12)}
+.acct b{letter-spacing:-.4px}
+.sw span{background:rgba(120,120,128,.3);transition:background .3s}
+.sw span::after{box-shadow:0 3px 8px rgba(0,0,0,.18),0 1px 1px rgba(0,0,0,.12)}
+.rng{-webkit-appearance:none;appearance:none;height:30px;background:transparent;margin:6px 0 0}
+.rng::-webkit-slider-runnable-track{height:4px;border-radius:2px;background:var(--track)}
+.rng::-webkit-slider-thumb{-webkit-appearance:none;width:28px;height:28px;margin-top:-12px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25),0 0 0 .5px rgba(0,0,0,.08)}
+.rng::-moz-range-track{height:4px;border-radius:2px;background:var(--track)}
+.rng::-moz-range-thumb{width:28px;height:28px;border:0;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.25)}
+.seg{margin:0 18px 16px;border-radius:11px}.seg .on{border-radius:9px}
+.ch{padding:16px 18px}
+.demo{margin:6px 36px 0;font-size:12px;line-height:16px;letter-spacing:-.05px;color:var(--sec);opacity:.85}
+.page{box-shadow:-8px 0 30px rgba(0,0,0,.14)}
+@media (min-width:500px){#app{border:11px solid #121214;box-shadow:0 0 0 2px #4a4a4e,0 0 0 4px #1d1d1f,0 40px 90px rgba(0,0,0,.35),inset 0 0 0 1px #000}
+#app::before{content:"9:41";position:absolute;top:19px;left:38px;z-index:50;font:600 16px/1 -apple-system,"SF Pro Text",sans-serif;color:var(--lb)}}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+var D={name:"iPhone 18 Pro Max",modelName:"iPhone 18 Pro Max",cap:256,ios:"27.2.1"};var MODELNO="MXXX0VC/A",SERIAL="DEMO0018PMX";
+var S=Object.assign({},D),AIR=false,busy=false,stack=[];
+var app=document.getElementById("app");
+var LAB={name:"Nombre",ios:"Versión de iOS"};
+var CAPS=[128,256,512,1024];
+var capLabel=function(c){return c>=1024?c/1024+" TB":c+" GB"};
+var fmt=function(n){return n.toFixed(2)};
+var CHEV='<svg class="chev" viewBox="0 0 8 13"><path d="M1.5 1.5l5 5-5 5"/></svg>';
+var BACKSVG='<svg width="12" height="20" viewBox="0 0 12 20"><path d="M10 2L2 10l8 8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+var IC={
+plane:'<path class="f" d="M12 2.5c.8 0 1.4.7 1.4 1.5v5.2l7.1 4.3v2l-7.1-2.1v4.3l2 1.6v1.5L12 20.2l-3.4 1.1v-1.5l2-1.6v-4.3l-7.1 2.1v-2l7.1-4.3V4c0-.8.6-1.5 1.4-1.5z"/>',
+wifi:'<path d="M3 9.5a13 13 0 0118 0M6 13a8.5 8.5 0 0112 0M9 16.4a4 4 0 016 0"/><circle class="f" cx="12" cy="19.4" r="1.3"/>',
+bt:'<path d="M7 7.5l10 9-5 4.5V3l5 4.5-10 9"/>',
+cell:'<path d="M5 20v-4M10 20v-8M15 20V8M20 20V4"/>',
+link:'<path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3A4 4 0 0011 18.700l1-1"/>',
+bell:'<path d="M6 16V11a6 6 0 0112 0v5l1.5 2h-15zM10 21h4"/>',
+spk:'<path d="M4 9.500h3.500L12 5.500v13l-4.500-4H4zM15.500 9a4 4 0 010 6M18 6.500a8 8 0 010 11"/>',
+moon:'<path class="f" d="M20 14.500A8.500 8.500 0 019.500 4 8.500 8.500 0 1020 14.500z"/>',
+hour:'<path d="M7 3h10M7 21h10M8 3c0 5 8 5 8 9s-8 4-8 9M16 3c0 5-8 5-8 9s8 4 8 9"/>',
+gear:'<circle cx="12" cy="12" r="3.200"/><circle cx="12" cy="12" r="7.500" stroke-dasharray="3.100 2.200"/>',
+sli:'<path d="M4 8h16M4 16h16"/><circle class="f" cx="9" cy="8" r="2.600"/><circle class="f" cx="15" cy="16" r="2.600"/>',
+sun:'<circle cx="12" cy="12" r="4"/><path d="M12 2.500v2.500M12 19v2.500M2.500 12H5M19 12h2.500M5.300 5.300l1.800 1.800M16.900 16.900l1.800 1.800M5.300 18.700l1.800-1.800M16.900 7.100l1.800-1.800"/>',
+grid:'<rect class="f" x="4" y="4" width="6.500" height="6.500" rx="1.500"/><rect class="f" x="13.500" y="4" width="6.500" height="6.500" rx="1.500"/><rect class="f" x="4" y="13.500" width="6.500" height="6.500" rx="1.500"/><rect class="f" x="13.500" y="13.500" width="6.500" height="6.500" rx="1.500"/>',
+man:'<circle cx="12" cy="5" r="2"/><path d="M4 9l8 1.500L20 9M12 10.500V15M12 15l-3.500 6M12 15l3.500 6"/>',
+img:'<rect x="4" y="4" width="16" height="16" rx="3"/><path d="M4 16l5-5 4 4 2-2 5 5"/>',
+mag:'<circle cx="11" cy="11" r="6.500"/><path d="M16 16l4.500 4.500"/>',
+face:'<path d="M4 8V6a2 2 0 012-2h2M16 4h2a2 2 0 012 2v2M20 16v2a2 2 0 01-2 2h-2M8 20H6a2 2 0 01-2-2v-2M9 10v1.500M15 10v1.500M9 15c1.500 1.500 4.500 1.500 6 0"/>',
+hand:'<path d="M12 3l8 3v6c0 4.500-3.500 7.500-8 9-4.500-1.500-8-4.500-8-9V6z"/>',
+cam:'<rect x="3" y="7" width="18" height="12" rx="3"/><circle cx="12" cy="13" r="3.200"/><path d="M8 7l1.500-2.500h5L16 7"/>',
+batt:'<rect x="3" y="8" width="16" height="8.500" rx="2.500"/><path d="M21 11v3"/><rect class="f" x="5.500" y="10.500" width="7" height="3.500" rx="1"/>'};
+function ico(k,c){return '<span class="ic" style="background:'+c+'"><svg viewBox="0 0 24 24">'+IC[k]+'</svg></span>'}
+function R(o){return '<div class="row'+(o.a?"":" st")+'" data-l="'+o.l+'"'+(o.a||"")+'>'+(o.i?ico(o.i,o.c):"")+'<div class="in"><span class="lb'+(o.cls?" "+o.cls:"")+'">'+o.l+'</span>'+(o.v?'<span class="vl">'+o.v+'</span>':"")+(o.nc?"":CHEV)+'</div></div>'}
+function G(rows,id){return '<div class="card"'+(id?' id="'+id+'"':"")+'>'+rows.join("")+'</div>'}
+var gen=function(n){return ' data-go="generic:'+n+'"'};
+var CATS=[["Apps","#ff9f0a",.21],["Fotos","#ffd60a",.17],["Multimedia","#30d158",.05],["iOS","#8e8e93",.045],["Datos del sistema","#636366",.06],["Otros","#aeaeb2",.035]];function usedGB(){return CATS.reduce(function(a,c){return a+c[2]*S.cap},0)}
+var PAGES={
+main:function(){return {t:"Configuración",h:
+'<div class="search"><svg viewBox="0 0 20 20"><circle cx="8.500" cy="8.500" r="5.500"/><path d="M13 13l4 4"/></svg><input id="q" type="search" placeholder="Buscar" autocomplete="off"></div>'+
+'<div class="card"><div class="row" data-l="Apple Account"'+gen("Apple Account")+'><div class="acct"><span class="av">A</span><div><b>Apple Account</b><small>iCloud, multimedia y compras</small></div></div><div class="in" style="border:0"><span class="lb"></span>'+CHEV+'</div></div></div>'+
+G(['<div class="row" data-l="Modo avión">'+ico("plane","#ff9500")+'<div class="in"><span class="lb">Modo avión</span><label class="sw"><input type="checkbox" id="air"'+(AIR?" checked":"")+'><span></span></label></div></div>',
+R({l:"Wi‑Fi",i:"wifi",c:"#007aff",a:gen("Wi‑Fi")}),R({l:"Bluetooth",i:"bt",c:"#007aff",v:"Sí",a:gen("Bluetooth")}),R({l:"Datos móviles",i:"cell",c:"#34c759",a:gen("Datos móviles")}),R({l:"Compartir conexión",i:"link",c:"#34c759",a:gen("Compartir conexión")})])+
+G([R({l:"Notificaciones",i:"bell",c:"#ff3b30",a:gen("Notificaciones")}),R({l:"Sonidos y vibración",i:"spk",c:"#ff2d55",a:gen("Sonidos y vibración")}),R({l:"Concentración",i:"moon",c:"#5856d6",a:gen("Concentración")}),R({l:"Tiempo en pantalla",i:"hour",c:"#5856d6",a:gen("Tiempo en pantalla")})])+
+G([R({l:"General",i:"gear",c:"#8e8e93",a:' data-go="general"'}),R({l:"Centro de control",i:"sli",c:"#8e8e93",a:gen("Centro de control")}),R({l:"Pantalla y brillo",i:"sun",c:"#007aff",a:gen("Pantalla y brillo")}),R({l:"Pantalla de inicio",i:"grid",c:"#007aff",a:gen("Pantalla de inicio")}),R({l:"Accesibilidad",i:"man",c:"#007aff",a:gen("Accesibilidad")}),R({l:"Fondo de pantalla",i:"img",c:"#32ade6",a:gen("Fondo de pantalla")}),R({l:"Cámara",i:"cam",c:"#8e8e93",a:gen("Cámara")})])+
+G([R({l:"Siri y buscar",i:"mag",c:"#5e5ce6",a:gen("Siri y buscar")}),R({l:"Face ID y código",i:"face",c:"#34c759",a:gen("Face ID y código")}),R({l:"Privacidad y seguridad",i:"hand",c:"#007aff",a:gen("Privacidad y seguridad")}),R({l:"Batería",i:"batt",c:"#34c759",a:gen("Batería")})],"g4")}},
+general:function(){return {t:"General",h:
+G([R({l:"Información",a:' data-go="about"'}),R({l:"Actualización de software",a:gen("Actualización de software")}),R({l:"Almacenamiento del iPhone",a:' data-go="storage"'}),R({l:"Actualización en segundo plano",a:gen("Actualización en segundo plano")})])+
+G([R({l:"AirDrop",a:gen("AirDrop")}),R({l:"AirPlay y Continuidad",a:gen("AirPlay y Continuidad")}),R({l:"Imagen dentro de imagen",a:gen("Imagen dentro de imagen")}),R({l:"CarPlay",a:gen("CarPlay")})])+
+G([R({l:"Fecha y hora",a:gen("Fecha y hora")}),R({l:"Teclado",a:gen("Teclado")}),R({l:"Fuentes",a:gen("Fuentes")}),R({l:"Idioma y región",a:gen("Idioma y región")}),R({l:"Diccionario",a:gen("Diccionario")})])+
+G([R({l:"Gestión de VPN y dispositivo",a:gen("Gestión de VPN y dispositivo")})])+
+G([R({l:"Transferir o restablecer el iPhone",a:gen("Transferir o restablecer el iPhone")}),R({l:"Apagar",cls:"blue",nc:1,a:' data-act="off"'})])}},
+edit:function(k){return {t:LAB[k],h:
+'<div class="card"><div class="edit"><input data-key="'+k+'" value="'+S[k].replace(/"/g,"&quot;")+'" maxlength="40" autocomplete="off" autocapitalize="off" spellcheck="false"></div></div>'}},
+cap:function(){return {t:"Capacidad",h:G(CAPS.map(function(c){return '<div class="row" data-l="'+capLabel(c)+'" data-pick="'+c+'"><div class="in"><span class="lb">'+capLabel(c)+'</span>'+(S.cap===c?'<svg class="chk" viewBox="0 0 16 16"><path d="M2 8.500l4 4 8-9"/></svg>':"")+'</div></div>'}))+
+'<div class="foot">Solo cambia la capacidad que se muestra en Información y en Almacenamiento del iPhone.</div>'}},
+storage:function(){var C=CATS,used=usedGB();
+return {t:"Almacenamiento del iPhone",h:
+'<div class="card"><div class="sh"><div class="top"><b>'+S.name+'</b><span>'+fmt(used)+' GB de '+capLabel(S.cap)+' usados</span></div><div class="bar">'+C.map(function(c){return '<i style="width:'+c[2]*100+'%;background:'+c[1]+'"></i>'}).join("")+'</div></div></div>'+
+G(C.map(function(c){return '<div class="row" data-l="'+c[0]+'" data-go="generic:'+c[0]+'"><span class="dot" style="background:'+c[1]+'"></span><div class="in"><span class="lb">'+c[0]+'</span><span class="vl">'+fmt(c[2]*S.cap)+' GB</span>'+CHEV+'</div></div>'}).concat(['<div class="row" data-l="Disponible"><span class="dot" style="background:var(--track)"></span><div class="in"><span class="lb">Disponible</span><span class="vl">'+fmt(S.cap-used)+' GB</span></div></div>']))+
+'<div class="foot">Distribución de demostración calculada a partir de la capacidad que elijas en Información.</div>'}},
+generic:function(n){return GENERIC(n)}
+};
+function build(e,prevTitle){var pg=PAGES[e.id](e.p);e.title=pg.t;var big=e.id==="main"?"Configuración":pg.t;
+var long=big.length>20&&e.id!=="main";
+e.el.innerHTML='<header class="nav">'+(e.id==="main"?"<span></span>":'<button class="back" data-back="1">'+BACKSVG+'<span>'+(prevTitle||"Atrás")+'</span></button>')+'<b class="t">'+pg.t+'</b><span></span></header><div class="body"><h1'+(long?' style="font-size:28px;line-height:34px"':"")+'>'+big+'</h1>'+pg.h+'<div class="demo">Réplica de demostración · datos ficticios</div></div>'}
+function refresh(skipTop){stack.forEach(function(e,i){if(skipTop&&i===stack.length-1)return;var s=e.el.scrollTop;build(e,i?stack[i-1].title:"");e.el.scrollTop=s;e.el.classList.toggle("sc",s>38)})}
+function push(id,p){if(busy)return;busy=true;var el=document.createElement("section");el.className="page"+(id!=="main"?" inl":"")+(stack.length?" in":"");
+el.addEventListener("scroll",function(){el.classList.toggle("sc",el.scrollTop>38)});
+var e={id:id,p:p,el:el};build(e,stack.length?stack[stack.length-1].title:"");app.appendChild(el);
+var prev=stack[stack.length-1];stack.push(e);
+if(prev){void el.offsetWidth;requestAnimationFrame(function(){el.classList.remove("in");prev.el.classList.add("under")})}
+setTimeout(function(){busy=false},prev?360:0)}
+function pop(){if(busy||stack.length<2)return;busy=true;var e=stack.pop(),prev=stack[stack.length-1];
+if(document.activeElement)document.activeElement.blur();
+e.el.classList.add("in");prev.el.classList.remove("under");refresh();
+setTimeout(function(){e.el.remove();busy=false},360)}
+app.addEventListener("click",function(ev){var t=ev.target.closest("[data-go],[data-back],[data-pick],[data-reset]");if(!t)return;
+if(t.dataset.back)return pop();
+if(t.dataset.pick){S.cap=+t.dataset.pick;return refresh()}
+if(t.dataset.reset){S=Object.assign({},D);return refresh()}
+var s=t.dataset.go,i=s.indexOf(":");push(i<0?s:s.slice(0,i),i<0?null:s.slice(i+1))});
+app.addEventListener("input",function(ev){var t=ev.target;
+if(t.dataset.key){var v=t.value.trim();if(v){S[t.dataset.key]=v;refresh(true)}return}
+if(t.id==="q"){var q=t.value.trim().toLowerCase();t.closest(".page").querySelectorAll(".card").forEach(function(c,i){if(i===0)return;var any=false;c.querySelectorAll(".row").forEach(function(r){var m=(r.dataset.l||"").toLowerCase().indexOf(q)>-1;r.style.display=m?"":"none";if(m)any=true});c.style.display=any?"":"none"})}});
+app.addEventListener("change",function(ev){if(ev.target.id==="air")AIR=ev.target.checked});
+app.addEventListener("keydown",function(ev){if(ev.key==="Enter"&&ev.target.dataset.key){ev.target.blur();pop()}});
+var ST={};
+function gv(k,d){return ST[k]==null?d:ST[k]}
+function g(h){return {h:h,i:[].slice.call(arguments,1)}}
+function sw(k,l,d){return ["sw",k,l,d]}
+function rd(k,o,d){return ["rd",k,o,d]}
+function vl(l,v){return ["vl",l,v]}
+function v2(l,v){return ["v2",l,v]}
+function sl(k,l,a,b,d,u){return ["sl",k,l,a,b,d,u||""]}
+function tx(t){return ["tx",t]}
+function bt(l,a){return ["bt",l,a]}
+function ln(l,v,go){return ["ln",l,v,go]}
+function raw(h){return ["raw",h]}
+var CHK='<svg class="chk" viewBox="0 0 16 16"><path d="M2 8.500l4 4 8-9"/></svg>';
+function RG(gs){return gs.map(function(x){var f="",rows=x.i.map(function(it){var t=it[0];
+if(t==="tx"){f+=(f?"<br>":"")+it[1];return ""}
+if(t==="sw")return '<div class="row st"><div class="in"><span class="lb">'+it[2]+'</span><label class="sw"><input type="checkbox" data-k="'+it[1]+'"'+(gv(it[1],it[3])?" checked":"")+'><span></span></label></div></div>';
+if(t==="rd")return it[2].map(function(o,i){return '<div class="row" data-rad="'+it[1]+':'+i+'"><div class="in"><span class="lb">'+o+'</span>'+(gv(it[1],it[3])==i?CHK:"")+'</div></div>'}).join("");
+if(t==="sl")return '<div class="row st"><div class="in col"><div style="display:flex"><span class="lb">'+it[2]+'</span><span class="vl" data-sv="'+it[1]+'">'+gv(it[1],it[5])+it[6]+'</span></div><input type="range" class="rng" data-k="'+it[1]+'" min="'+it[3]+'" max="'+it[4]+'" value="'+gv(it[1],it[5])+'"></div></div>';
+if(t==="v2")return '<div class="row st"><div class="in col"><span class="lb">'+it[1]+'</span><span class="sub">'+it[2]+'</span></div></div>';
+if(t==="ln")return R({l:it[1],v:it[2],a:' data-go="'+it[3]+'"'});
+if(t==="bt")return R({l:it[1],cls:"blue",nc:1,a:' data-act="'+it[2]+'"'});
+if(t==="raw")return it[1];
+return R({l:it[1],v:it[2],nc:1})}).join("");
+return (x.h?'<div class="hdr">'+x.h+'</div>':"")+'<div class="card">'+rows+'</div>'+(f?'<div class="foot">'+f+'</div>':"")}).join("")}
+var NPH="1,506",NVID="107",WIFI="02:00:00:00:00:01",BTMAC="02:00:00:00:00:02",EID="89049032000000000000000000000001";
+var NAMES=["Fotos","Música","Safari","Mensajes","Mail","Mapas","Podcasts","Libros","Salud","Archivos","Notas","Cámara","Apple TV","Diario","Traducir","Calendario","FaceTime","Casa","Reloj","Tiempo","Cartera","Calculadora","Medidas","Grabadora","Contactos","Bolsa","Brújula","Recordatorios","Buscar","Teléfono"];
+function apps(){var w=NAMES.map(function(_,i){return 1/(i+2)}),t=w.reduce(function(a,b){return a+b},0),tot=CATS[0][2]*S.cap;return NAMES.map(function(n,i){return [n,tot*w[i]/t]})}
+function BD(){var lv=gv("lvl",82),a=[],i;a[23]=lv;for(i=23;i>0;i--){a[i-1]=Math.max(6,Math.min(100,a[i]+((i>=19&&i<=21)?-9:2+(i*7)%3)))}
+var m=[],l10=[],h10=[];for(i=0;i<24;i++)m.push(i<7?0:(i*37)%41+8);
+for(i=0;i<10;i++){l10.push((i*13)%35+50);h10.push(+(2.5+((i*7)%5)*.8).toFixed(1))}
+return {a:a,m:m,l10:l10,h10:h10,t:m.reduce(function(x,y){return x+y},0),avg:h10.reduce(function(x,y){return x+y},0)/10*60}}
+function fh(m){m=Math.round(m);return Math.floor(m/60)+" h "+m%60+" min"}
+function bars(v,mx,col){var w=300/v.length,r='<svg viewBox="0 0 320 100" width="100%" style="display:block"><path d="M0 99H320M0 50H320" stroke="var(--sep)" stroke-width=".6"/>';v.forEach(function(x,i){var h=Math.max(1.5,x/mx*92);r+='<rect x="'+(i*w+2)+'" y="'+(98-h)+'" width="'+(w-4)+'" height="'+h+'" rx="2" fill="'+col(x)+'"/>'});return r+'</svg>'}
+function ax(l){return '<div class="axis"><span>'+l[0]+'</span><span>'+l[1]+'</span><span>'+l[2]+'</span></div>'}
+function bchart(){var d=BD(),s=gv("seg",0),lab=s?["Hace 10 días","","Hoy"]:["Hace 24 h","12 h","Ahora"];
+return '<div class="card ch"><h4>Nivel de batería</h4>'+bars(s?d.l10:d.a,100,function(x){return x<20?"#ff3b30":"#34c759"})+ax(lab)+'</div><div class="card ch"><h4>Actividad de pantalla</h4><b>'+fh(s?d.avg:d.t)+'</b><small>'+(s?"promedio diario":"en las últimas 24 horas")+'</small>'+bars(s?d.h10:d.m,s?8:60,function(){return "#0a84ff"})+ax(lab)+'</div>'}
+var BAPP=[["Safari",28],["Mensajes",22],["Música",15],["Cámara",12],["Mapas",9],["Mail",6],["Fotos",5],["Notas",3]];
+var GP={
+"Apple Account":[g("",vl("Cuenta","Usuario demo"),vl("Correo","usuario@ejemplo.com")),g("",sw("icl","iCloud+",1),sw("mmc","Multimedia y compras",1),sw("fam","Compartir en familia",0))],
+"Wi-Fi":[g("",sw("wifi","Wi‑Fi",1)),g("Mis redes",rd("net",["Red doméstica","Oficina","Invitados"],0)),g("",sw("ask","Preguntar si conectarse",1),tx("Si no hay redes conocidas, se te preguntará antes de conectarte."))],
+"Bluetooth":function(){return [g("",sw("btt","Bluetooth",1),tx("Este iPhone se puede descubrir como «"+S.name+"» mientras Bluetooth está activado.")),g("Mis dispositivos",vl("Auriculares demo","Conectado"),vl("Reloj demo","No conectado"))]},
+"Datos móviles":[g("",sw("cel","Datos móviles",1),sw("roam","Roaming de datos",0)),g("Voz y datos",rd("vd",["5G activado","5G automático","LTE"],1)),g("",sw("lowd","Modo de datos bajos",0))],
+"Compartir conexión":[g("",sw("hot","Permitir a otros conectarse",0),tx("Otros dispositivos podrán usar los datos móviles del iPhone."))],
+"Notificaciones":[g("Mostrar vistas previas",rd("prev",["Siempre","Con el iPhone desbloqueado","Nunca"],1)),g("",sw("sirn","Sugerencias de Siri",1),sw("emer","Alertas de emergencia",1),sw("gov","Alertas del gobierno",1))],
+"Sonidos y vibración":[g("Volumen",sl("vol","Timbre y alertas",0,100,60," %")),g("Tono de llamada",rd("tone",["Reflexión","Apertura","Radar","Cumbre"],0)),g("",sw("hap","Respuesta háptica del sistema",1),sw("vib","Vibrar con el timbre",1),sw("kbc","Clics del teclado",1),sw("lkc","Sonido de bloqueo",1))],
+"Concentración":[g("",sw("dnd","No molestar",0)),g("Concentraciones",sw("f1","Trabajo",0),sw("f2","Dormir",0),sw("f3","Personal",0),sw("f4","Conducir",0)),g("",sw("shf","Compartir estado de concentración",1))],
+"Tiempo en pantalla":function(){var d=BD();return [g("",vl("Hoy",fh(d.t)),vl("Promedio diario",fh(d.avg))),g("",sw("stt","Tiempo en pantalla",1),sw("lim","Límites de apps",0),sw("com","Límites de comunicación",0))]},
+"Centro de control":[g("",sw("ccl","Acceso con el iPhone bloqueado",1),sw("cca","Acceso dentro de apps",1)),g("Controles incluidos",sw("c1","Linterna",1),sw("c2","Temporizador",1),sw("c3","Calculadora",1),sw("c4","Cámara",1),sw("c5","Modo de bajo consumo",1))],
+"Pantalla y brillo":[g("Aspecto",rd("theme",["Claro","Oscuro","Automático"],2)),g("Brillo",sl("bri","Brillo",0,100,70," %"),sw("tt","True Tone",1),sw("ns","Night Shift",0)),g("Bloqueo automático",rd("lock",["30 segundos","1 minuto","2 minutos","5 minutos","Nunca"],1)),g("Texto",sl("tsz","Tamaño del texto",14,22,17," pt"),sw("bold","Texto en negrita",0)),g("",sw("raise","Activar al levantar",1))],
+"Pantalla de inicio":[g("Apps recién descargadas",rd("newapp",["Añadir a pantalla de inicio","Solo en biblioteca de apps"],0)),g("",sw("badge","Mostrar insignias",1),sw("sugl","Sugerencias de Siri",1))],
+"Accesibilidad":[g("Visión",sw("vo","VoiceOver",0),sw("zoom","Zoom",0),sw("hc","Aumentar contraste",0),sw("rm","Reducir movimiento",0)),g("Interacción",sw("at","AssistiveTouch",0),sw("vc","Control por voz",0),sw("tap","Tocar para activar",0)),g("Audición",sw("mono","Audio monoaural",0),sw("led","Flash LED para alertas",0))],
+"Fondo de pantalla":[g("Fondo",rd("wp",["Aurora","Océano","Atardecer","Grafito"],0)),g("",sw("wpd","Atenuar fondo en modo oscuro",1))],
+"Cámara":[g("Formatos",rd("camf",["Alta eficiencia","Más compatible"],0)),g("Grabar video",rd("vq",["1080p a 30 fps","4K a 30 fps","4K a 60 fps"],1)),g("",sw("grid","Cuadrícula",1),sw("mir","Reflejar cámara frontal",0),sw("lv2","Nivel",1),sw("hdr","HDR inteligente",1),sw("qr","Escanear códigos QR",1))],
+"Siri y buscar":[g("",sw("hey","Escuchar «Siri»",1),sw("side","Pulsar el botón lateral para Siri",1)),g("Voz de Siri",rd("sv",["Voz 1","Voz 2","Voz 3"],0)),g("",sw("sugs","Mostrar sugerencias en Buscar",1))],
+"Face ID y código":[g("Usar Face ID para",sw("fu","Desbloquear el iPhone",1),sw("fp","Apple Pay",1),sw("fa","Rellenar contraseñas",1)),g("",sw("att","Requerir atención para Face ID",1),vl("Código","Activado"))],
+"Privacidad y seguridad":[g("",sw("loc","Localización",1),sw("trk","Permitir rastreo a las apps",0),sw("ana","Compartir analíticas del iPhone",0)),g("",vl("Modo aislamiento","Desactivado"),sw("sfx","Verificación de seguridad",1))],
+"Actualización de software":function(){return [g("",vl("Versión instalada","iOS "+S.ios),vl("Estado",gv("updmsg","Tu software está actualizado")),bt("Buscar actualización","upd")),g("",sw("autoupd","Actualizaciones automáticas",1),sw("autodl","Descargar actualizaciones de iOS",1),tx("Se instalarán por la noche con el iPhone cargando y conectado a Wi‑Fi."))]},
+"Actualización en segundo plano":[g("Actualización en segundo plano",rd("bgu",["Wi-Fi","Wi-Fi y datos móviles","No"],0)),g("Apps",...NAMES.slice(0,8).map(function(n){return sw("bg_"+n,n,1)}))],
+"AirDrop":[g("Permitir ser descubierto por",rd("ad",["Recepción desactivada","Solo contactos","Todos durante 10 minutos"],1))],
+"AirPlay y Continuidad":[g("",sw("hand","Handoff",1),sw("ccam","Cámara de continuidad",1)),g("Transferir a HomePod o TV",rd("apl",["Nunca","Preguntar","Automáticamente"],1))],
+"Imagen dentro de imagen":[g("",sw("pip","Iniciar PiP automáticamente",1),tx("El video sigue en una ventana flotante al salir de la app."))],
+"CarPlay":[g("",vl("Coches","Ninguno"),sw("cpl","Permitir CarPlay con el iPhone bloqueado",1))],
+"Fecha y hora":function(){return [g("",sw("h24","Formato de 24 horas",0),sw("autot","Ajuste automático",1)),g("",vl("Hora actual",new Date().toLocaleTimeString("es-MX",{hour:"2-digit",minute:"2-digit",hour12:!gv("h24",0)})))]},
+"Teclado":[g("",sw("cap","Mayúsculas automáticas",1),sw("cor","Corrección automática",1),sw("spl","Revisar ortografía",1),sw("pred","Texto predictivo",1),sw("dot","Atajo con «.»",1),sw("dic","Activar dictado",1))],
+"Fuentes":[g("Fuentes del sistema",vl("SF Pro","Sistema"),vl("SF Compact","Sistema"),vl("SF Mono","Sistema"),vl("New York","Sistema"))],
+"Idioma y región":[g("",vl("Idioma del iPhone","Español"),vl("Región","México")),g("Unidades de medida",rd("un",["Sistema métrico","Imperial"],0)),g("Calendario",rd("cal",["Gregoriano","Budista","Japonés"],0))],
+"Diccionario":[g("Diccionarios descargados",sw("d1","Español",1),sw("d2","English",0),sw("d3","Français",0))],
+"Gestión de VPN y dispositivo":[g("",sw("vpn","VPN",0),vl("Perfiles","Ninguno"),tx("No hay perfiles ni VPN configurados."))],
+"Transferir o restablecer el iPhone":[g("",bt("Restablecer ajustes de demostración","rst"),bt("Restablecer datos de demostración","rstD"),tx("Solo restablece esta réplica. No modifica los ajustes ni los datos reales del iPhone."))],
+"La cobertura venció":[g("",vl("Cobertura limitada","Vencida"),vl("AppleCare+","No activo"))],
+"SEID":[g("",v2("SEID","DEMO-SEID-000000000001"))],
+"Config. certificados de confianza":[g("Certificados raíz",sw("ct1","Autoridad raíz demo A",1),sw("ct2","Autoridad raíz demo B",1),tx("Certificados ficticios de demostración."))],
+"Salud de la batería":[g("",vl("Capacidad máxima","99 %"),vl("Número de ciclos","38"),vl("Fecha de fabricación","agosto de 2026"),vl("Fecha de primer uso","25 de septiembre de 2026")),g("",sw("opt","Carga optimizada",1),tx("El iPhone aprende tu rutina de carga para reducir el desgaste de la batería.")),g("Límite de carga",rd("lim2",["80 %","85 %","90 %","95 %","100 %"],4)),g("",vl("Rendimiento máximo","Normal"),tx("Tu batería admite un rendimiento máximo normal."))],
+"Batería":function(){var lv=gv("lvl",82),s=gv("seg",0),col=gv("lowp",0)?"#ffd60a":lv<20?"#ff3b30":"#34c759";
+return '<div class="card ch"><div style="display:flex;align-items:center;justify-content:space-between"><div><h4>Nivel de carga</h4><b data-sv="lvl">'+lv+' %</b></div><div class="bt"><i class="bfill" style="width:'+lv+'%;background:'+col+'"></i></div></div></div>'+
+RG([g("",sw("pctb","Porcentaje de la batería",1),sw("lowp","Modo de bajo consumo",0),ln("Salud de la batería","99 %","generic:Salud de la batería"),sw("opt","Carga optimizada",1)),g("Demostración",sl("lvl","Ajustar nivel de carga",5,100,82," %"))])+
+'<div class="seg"><div data-seg="0"'+(s?"":' class="on"')+'>Últimas 24 horas</div><div data-seg="1"'+(s?' class="on"':"")+'>Últimos 10 días</div></div><div id="bch">'+bchart()+'</div><div class="hdr">Uso por app</div><div class="card">'+BAPP.map(function(a){return '<div class="row st"><div class="in col"><div style="display:flex"><span class="lb">'+a[0]+'</span><span class="vl">'+a[1]+' %</span></div><div class="ubar"><i style="width:'+a[1]+'%"></i></div></div></div>'}).join("")+'</div>'}
+};
+var EX={"Fotos":function(){return g("",vl("Fotos",NPH),vl("Videos",NVID))},"Multimedia":function(){return g("",vl("Canciones","0"),vl("Podcasts","0"),vl("Libros","0"))},"iOS":function(){return g("",vl("Versión","iOS "+S.ios))},"Datos del sistema":function(){var z=CATS[4][2]*S.cap;return g("",vl("Cachés y registros",fmt(z*.6)+" GB"),vl("Otros datos del sistema",fmt(z*.4)+" GB"),tx("El sistema administra este espacio automáticamente."))},"Otros":function(){return g("",vl("Documentos y datos de apps",fmt(CATS[5][2]*S.cap)+" GB"))}};
+CATS.forEach(function(c){GP[c[0]]=function(){var z=c[2]*S.cap;if(c[0]==="Apps")return [g("",vl("Espacio usado por apps",fmt(z)+" GB"),vl("Apps instaladas",String(NAMES.length))),g.apply(null,["Apps por tamaño"].concat(apps().map(function(a){return vl(a[0],fmt(a[1])+" GB")})))];
+return [g("",vl("Espacio usado",fmt(z)+" GB"),vl("Del total",(c[2]*100).toFixed(1)+" %")),EX[c[0]]()]}});
+function GENERIC(n){var d=GP[n]||GP[n.replace(/[\u2010-\u2015]/g,"-")];if(typeof d==="function")d=d();return {t:n,h:typeof d==="string"?d:RG(d)}}
+PAGES.about=function(){var u=usedGB();return {t:"Información",h:RG([
+g("",ln("Nombre",S.name,"edit:name"),ln("Versión de iOS",S.ios,"edit:ios"),vl("Nombre del modelo",S.modelName),vl("Número de modelo",MODELNO),vl("Número de serie",SERIAL)),
+g("",ln("La cobertura venció","","generic:La cobertura venció")),
+g("",vl("Canciones","0"),vl("Videos",NVID),vl("Fotos",NPH),vl("Apps",String(NAMES.length)),raw(R({l:"Capacidad",v:capLabel(S.cap),nc:1,a:' data-go="cap"'})),vl("Disponible",fmt(S.cap-u)+" GB")),
+g("",vl("Dirección Wi‑Fi",WIFI),vl("Bluetooth",BTMAC),vl("Firmware del módem","6.00.10"),ln("SEID","","generic:SEID"),v2("EID",EID),vl("Bloq. de operador","Sin restricción de SIM")),
+g("Tarjeta SIM física",vl("Red","Red demo"),vl("Operador","Operador 1.0"),vl("IMEI2","35 000000 000002 0"),vl("ICCID","8900000000000000001")),
+g("Tarjeta SIM disponible",vl("IMEI","35 000000 000001 0")),
+g("",ln("Config. certificados de confianza","","generic:Config. certificados de confianza")),
+g("",raw(R({l:"Restablecer valores de demostración",cls:"blue",nc:1,a:' data-reset="1"'})))])}};
+function applyST(k){if(k==="theme"){var v=gv("theme",2);if(v==2)document.documentElement.removeAttribute("data-theme");else document.documentElement.setAttribute("data-theme",v?"dark":"light")}
+if(k==="tsz")app.style.fontSize=gv("tsz",17)+"px";if(k==="bold")app.style.fontWeight=gv("bold",0)?"600":"";
+if(k==="bri"){var b=gv("bri",70);app.style.filter="brightness("+(b>=70?1:.4+.6*b/70)+")"}}
+app.addEventListener("click",function(ev){var t=ev.target.closest("[data-rad],[data-act],[data-seg]");if(!t)return;
+if(t.dataset.rad){var p=t.dataset.rad.split(":");ST[p[0]]=+p[1];applyST(p[0]);return refresh()}
+if(t.dataset.seg){ST.seg=+t.dataset.seg;return refresh()}
+var a=t.dataset.act;
+if(a==="off"){var o=document.createElement("div");o.className="off";o.innerHTML="<div>iPhone apagado<small>Toca la pantalla para encenderlo</small></div>";o.onclick=function(){o.remove()};app.appendChild(o)}
+if(a==="upd"){ST.updmsg="Buscando actualizaciones…";refresh();setTimeout(function(){ST.updmsg="Tu software está actualizado";refresh()},1400)}
+if(a==="rst"){ST={};["theme","tsz","bold","bri"].forEach(applyST);refresh()}
+if(a==="rstD"){S=Object.assign({},D);refresh()}});
+app.addEventListener("input",function(ev){var t=ev.target;if(t.type!=="range")return;var k=t.dataset.k,v=+t.value,pg=t.closest(".page");ST[k]=v;
+pg.querySelectorAll('[data-sv="'+k+'"]').forEach(function(e){e.textContent=v+(k==="tsz"?" pt":" %")});applyST(k);
+if(k==="lvl"){var c=pg.querySelector("#bch");if(c)c.innerHTML=bchart();var f=pg.querySelector(".bfill");if(f){f.style.width=v+"%";f.style.background=gv("lowp",0)?"#ffd60a":v<20?"#ff3b30":"#34c759"}}});
+app.addEventListener("change",function(ev){var t=ev.target;if(t.type==="checkbox"&&t.dataset.k){ST[t.dataset.k]=t.checked?1:0;if(t.dataset.k==="h24"||t.dataset.k==="lowp"||t.dataset.k==="bold"){applyST("bold");refresh()}}});
+push("main");
+</script>
+</body>
+</html>
